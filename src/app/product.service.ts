@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import {} from 'rxjs/add/operator/map'
 
 @Injectable()
 export class ProductService {
@@ -10,8 +9,7 @@ export class ProductService {
   constructor(private _http: Http) { }
 
   getAlbum(id: number) {
-    this._http.get(this._albumUrl).map(
-    );
+    this._http.get((this._albumUrl))
   }
 
 }
